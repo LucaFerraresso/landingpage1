@@ -25,7 +25,7 @@ const Navbar = () => {
     setTimeout(() => {
       setIsDropdownOpen(false); // Chiude il menu dopo un piccolo ritardo
       setIsSwitchClicked(false);
-    }, 600); // Ritardo di 300ms
+    }, 1600); // Ritardo di 300ms
   };
 
   // Aggiungi il listener per i clic al di fuori della navbar
@@ -80,7 +80,7 @@ const Navbar = () => {
                 onClick={(e) => e.stopPropagation()} // Impedisce che il click chiuda il menu
               >
                 <span className="text-lg text-gray-800 dark:text-gray-300">
-                  🌙
+                  🌙 dark
                 </span>
                 <Switch
                   checked={theme === "dark"}
@@ -88,7 +88,7 @@ const Navbar = () => {
                   className="transition-all duration-300"
                 />
                 <span className="text-lg text-gray-800 dark:text-gray-300">
-                  ☀️
+                  ☀️ light
                 </span>
               </div>
             </div>
